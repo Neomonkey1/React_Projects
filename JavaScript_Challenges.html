@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JS Challenges assignment</title>
+        <link rel="stylesheet" href="Challenges.css">
+        <script src="Challenges.js"></script>
+    </head>
+
+    <body>
+        <!--added script for fade-out-->
+        <script>
+            document.body.classList.add('fade-out');
+            window.addEventListener('DOMContentLoaded',() =>{
+                document.body.classList.remove('fade-out');
+            });
+        </script>
+        <!--Using responsive text (vw)-->
+        <h1 style="font-size: 7vw;">Setting this tag to have responsive text</h1>
+        <p style="font-size: 3vw;">Font size will scale to resized browser window!</p>
+        <br>
+        <!--Form-->
+        <form name="myForm" onsubmit="return validateForm()"  >
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value=""><br>
+            <label for="phone">Phone number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br>
+            <input type="submit" value="Submit">
+        </form>        
+        <br>
+        <!--end of Form-->
+        <!--Popup form-->
+        <button class="open-button" onclick="openForm()">Open Form</button>
+
+        <div class="form-popup" id="myForm2">
+            <form class="form-container">
+                <h1>Login</h1>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        
+        <!--end of Popup form-->
+
+
+    </body>
+</html>

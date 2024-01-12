@@ -13,3 +13,10 @@ function openForm(){
 function closeForm(){
     document.getElementById("myForm2").style.display = "none";
 }
+//Popup sticky form2
+function openForm2(){
+    document.getElementById('myForm3').style.display = "block";
+}
+function closeForm2(){
+    document.getElementById("myForm3").style.display = "none";
+}

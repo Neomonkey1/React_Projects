@@ -16,18 +16,23 @@
             });
         </script>
         <!--Using responsive text (vw)-->
-        <h1 style="font-size: 7vw;">Setting this tag to have responsive text</h1>
-        <p style="font-size: 3vw;">Font size will scale to resized browser window!</p>
-        <br>
+        <div id="section1">
+            <h1 style="font-size: 7vw;">Setting this tag to have responsive text</h1>
+            <p style="font-size: 3vw;">Font size will scale to resized browser window!</p>
+            <a href="#myForm1"><button type="button">to middle</button></a>
+            <br>
+        </div>
         <!--Form-->
-        <form name="myForm" onsubmit="return validateForm()"  >
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" value=""><br>
-            <label for="phone">Phone number:</label><br>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br>
-            <input type="submit" value="Submit">
-        </form>        
-        <br>
+        <div id="myForm1">
+            <form name="myForm" onsubmit="return validateForm()"  >
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" value=""><br>
+                <label for="phone">Phone number:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br>
+                <input type="submit" value="Submit">
+            </form>        
+            <br>
+        </div>
         <!--end of Form-->
         <!--Popup form-->
         <button class="open-button" onclick="openForm()">Open Form</button>
@@ -51,7 +56,10 @@
         <div class="keyanimation"></div><br>
         <!--end of @keyanimation-->
         <!--image for zoom in out effect-->
-        <img src="thumbnail_2.jpg" alt="moon" height="350px" width="450px" class="moon">
+        <div id="section3">
+            <a href="#section1"><button type="button">to top</button></a><br><br><br>
+            <img src="thumbnail_2.jpg" alt="moon" height="350px" width="450px" class="moon">
+        </div>
         <!--end of zoom in out effect-->
 
     </body>

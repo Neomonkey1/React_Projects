@@ -69,3 +69,30 @@ body.fade-out{
 .form-container .btn:hover, .open-button:hover{
     opacity: 1;
 }
+/* Adding @keyframe to animate */
+.keyanimation{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove{
+    from {left: 0px;}
+    to {left: 200px;}    
+}
+/* adding @keyframes to img */
+@keyframes zoominoutsinglefeatured{
+    0%{
+        transform: scale(1, 1);        
+    }
+    50%{
+        transform: scale(1.2, 1.2);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+.moon{
+    animation: zoominoutsinglefeatured 5s forwards;
+}
